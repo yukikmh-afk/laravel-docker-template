@@ -28,7 +28,10 @@
     <main class="py-4">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8">
+	  <div class="col-md-8">
+	   <p class = "text-left">
+		<a class = "btn btn-success" href = "http://localhost:8080/todo/create">ToDoを追加</a>
+	   </p>
             <div class="card">
               <div class="card-header">
                 ToDo一覧
