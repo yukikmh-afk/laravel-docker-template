@@ -25,4 +25,17 @@ class TodoController extends Controller
 
 		return redirect()->route('todo.index');
 	}
+
+	public function show($id){
+		$model = new Todo();
+		// findメソッド
+		// 基本的に主キーとして設定されているidでDBを検索する
+		// SQL構文としてselect * from テーブル where id = 引数;
+		// 上記を実行している
+		// そのためcontentにidと一致するカラムがあっても無視される
+		// contentで条件をつけて検索する際にはwhere()を使用
+		$todo = $model->find($id);
+
+		return view('todo.show',['todo'=>$todo]);
+	}
 }
