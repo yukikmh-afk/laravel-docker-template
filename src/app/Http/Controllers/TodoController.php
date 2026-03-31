@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Todo;
-use App\Http\Request\TodoRequest;
+use App\Http\Requests\TodoRequest;
 
 class TodoController extends Controller
 {
